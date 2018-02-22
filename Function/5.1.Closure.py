@@ -28,7 +28,7 @@ print count()
 
 ## 另一种实现
 from itertools import cycle
-S = [i for i in xrange(10, 21)]
+S = (i for i in xrange(10, 21))
 T = cycle(S)
 print T.next()
 print T.next()
